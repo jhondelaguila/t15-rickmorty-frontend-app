@@ -1,1 +1,29 @@
-<p>character works!</p>
+<div class="row center-elem">
+    <div *ngFor="let character of firstRow" class="card card-settings" style="width: 18rem">
+      <img src="{{ character.image }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ character.name }}</h5>
+      </div>
+      <div class="card-body center-elem">
+        <a type="button" class="btn btn-warning" routerLink="details/{{character.id}}">See more</a>
+      </div>
+    </div>
+  </div>
+  <div class="row center-elem">
+    <div *ngFor="let character of secondRow" class="card" style="width: 18rem">
+      <img src="{{ character.image }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ character.name }}</h5>
+      </div>
+      <div class="card-body center-elem">
+        <a type="button" class="btn btn-warning" routerLink="details/{{character.id}}">See more</a>
+      </div>
+    </div>
+  </div>
+  <div class="row center-elem">
+    <div class="btn-group btn-group-sm btn-1" role="group" aria-label="Small button group">
+      <button type="button" class="btn btn-outline-primary">previous</button>
+      <button type="button" class="btn btn-outline-primary" disabled>1</button>
+      <button type="button" class="btn btn-outline-primary">next</button>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+.card-settings {
+}
+
+.center-elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-1 {
+    margin: 20px;
+    width: 200px;
+}

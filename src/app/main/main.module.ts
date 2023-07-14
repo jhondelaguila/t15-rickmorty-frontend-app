@@ -7,8 +7,8 @@ import { AboutComponent } from './base/about/about.component';
 import { DetailsComponent } from './base/details/details.component';
 import { CharactersComponent } from './base/characters/characters.component';
 import { CharacterComponent } from './base/characters/character/character.component';
-
-
+import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,15 @@ import { CharacterComponent } from './base/characters/character/character.compon
     CharacterComponent,
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    AppRoutingModule,
+  ],
+  exports: [
+    HomeComponent,
+    AboutComponent,
+    DetailsComponent,
+    CharactersComponent,
+    BaseComponent
+  ],
 })
-export class MainModule { }
+export class MainModule {}
